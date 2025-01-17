@@ -1,4 +1,3 @@
-// src/controllers/jobController.js
 import { fetchJobsPage, removeDuplicates } from "../services/jobService.js";
 
 export const searchJobs = async (req, res) => {

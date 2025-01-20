@@ -141,8 +141,8 @@ const JobSearch = () => {
             </p>
           </div>
         )}
-
-        <div className="max-w-4xl mx-auto space-y-6">
+{!loading && (
+  <div className="max-w-4xl mx-auto space-y-6">
           {jobs.map((job, index) => (
             <div key={index} className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
               <div className="flex justify-between items-start mb-4">
@@ -189,6 +189,9 @@ const JobSearch = () => {
             </div>
           ))}
         </div>
+
+)}
+        
 
         {loading && (
           <div className="text-center py-8">
